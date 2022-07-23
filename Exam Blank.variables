@@ -1,0 +1,11 @@
+Variable	Meaning
+---------------------------------------------
+#1		Current Date(in ShortFormat)
+#2		Profile name
+#3		Person's input number (overwrite mode)
+#p		Shows a star(*) if person preferes the school (ovrw mode)
+#4		Person's name (overwrite mode)
+#5		Person's EGN
+#/		Start of repeating lines
+\#		End of repeating lines
+#6		Total persons count

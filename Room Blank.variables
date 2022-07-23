@@ -1,0 +1,11 @@
+Variable	Meaning
+---------------------------------------------
+#1		Current Date(in ShortFormat)
+#2		Name of the room (Room's code)
+#3		Name of the place
+#4		Person's input number (overwrite mode)
+#5		Person's name (overwrite mode)
+#6		Person's EGN
+#/		Start of repeating lines
+\#		End of repeating lines
+#7		Total persons count

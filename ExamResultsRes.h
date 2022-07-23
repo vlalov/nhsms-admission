@@ -1,0 +1,189 @@
+//---------------------------------------------------------------------------
+
+#ifndef ExamResultsResH
+#define ExamResultsResH
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <ExtCtrls.hpp>
+#include <QuickRpt.hpp>
+#include <QRCtrls.hpp>
+#include <DB.hpp>
+#include <DBTables.hpp>
+//---------------------------------------------------------------------------
+class TExamResultsResForm : public TForm
+{
+__published:	// IDE-managed Components
+   TQuickRep *QuickRep1;
+   TQRBand *TitleBand1;
+   TQRBand *ColumnHeaderBand1;
+   TQRBand *DetailBand1;
+   TQRLabel *QRLabel1;
+   TQuery *MainQuery;
+   TQRLabel *QRLabel2;
+   TIntegerField *MainQueryID;
+   TStringField *MainQueryName;
+   TIntegerField *MainQueryFK;
+   TFloatField *MainQueryScore;
+   TQRLabel *QRLabel3;
+   TQRLabel *QRLabel4;
+   TQRLabel *QRLabel5;
+   TQRLabel *QRLabel6;
+   TQRDBText *QRDBText1;
+   TQRDBText *QRDBText2;
+   TQRDBText *QRDBText3;
+   TQRDBText *QRDBText4;
+   TFloatField *MainQuerypoints;
+   TQRDBText *QRDBText5;
+   TQRBand *PageFooterBand1;
+   TQRLabel *QRLabel7;
+   TQRSysData *QRSysData1;
+   TQRLabel *QRLabel8;
+   TQRSysData *QRSysData2;
+   TQRLabel *ExamShowLabel;
+   TQuickRep *OfficialQuickRep;
+   TQRBand *QRBand5;
+   TQRLabel *QRLabel10;
+   TQRLabel *ShowExamLabel2;
+   TQRBand *QRBand6;
+   TQRBand *QRBand7;
+   TQRBand *QRBand8;
+   TQRLabel *QRLabel27;
+   TQRSysData *QRSysData5;
+   TQRLabel *QRLabel28;
+   TQRSysData *QRSysData6;
+   TQuery *OfficialQuery;
+   TIntegerField *IntegerField1;
+   TStringField *StringField1;
+   TIntegerField *IntegerField2;
+   TFloatField *FloatField1;
+   TFloatField *FloatField2;
+   TQRShape *QRShape1;
+   TQRDBText *QRDBText10;
+   TQRShape *QRShape2;
+   TQRDBText *QRDBText6;
+   TQRShape *QRShape3;
+   TQRDBText *QRDBText11;
+   TQRShape *QRShape4;
+   TQRDBText *QRDBText12;
+   TQRShape *QRShape5;
+   TQRShape *QRShape6;
+   TQRShape *QRShape7;
+   TQRShape *QRShape8;
+   TQRLabel *QRLabel18;
+   TQRLabel *QRLabel17;
+   TQRLabel *QRLabel24;
+   TQRLabel *QRLabel25;
+   TQuickRep *CurrentQuickRep;
+   TQRBand *QRBand9;
+   TQRLabel *QRLabel14;
+   TQRLabel *QRCurrentShow;
+   TQRBand *QRBand10;
+   TQRLabel *QRLabel29;
+   TQRLabel *QRLabel30;
+   TQRLabel *QRLabel31;
+   TQRLabel *QRLabel32;
+   TQRLabel *QRLabel33;
+   TQRBand *QRBand11;
+   TQRDBText *QRDBText17;
+   TQRDBText *QRDBText18;
+   TQRDBText *QRDBText19;
+   TQRDBText *QRDBText20;
+   TQRDBText *QRDBText21;
+   TQRBand *QRBand12;
+   TQRLabel *QRLabel34;
+   TQRSysData *QRSysData7;
+   TQRLabel *QRLabel35;
+   TQRSysData *QRSysData8;
+   TQuery *CurrentQuery;
+   TIntegerField *IntegerField3;
+   TStringField *StringField2;
+   TIntegerField *IntegerField4;
+   TFloatField *FloatField3;
+   TFloatField *FloatField4;
+   TStringField *OfficialQueryScoreLabel;
+   TStringField *OfficialQueryScoreString;
+   TQRDBText *QRDBText22;
+   TQuickRep *SearcherQuickRep;
+   TQRBand *QRBand1;
+   TQRDBText *QRDBText7;
+   TQRDBText *QRDBText8;
+   TQRDBText *QRDBText13;
+   TQRBand *QRBand2;
+   TQRLabel *QRLabel9;
+   TQRSysData *QRSysData3;
+   TQRLabel *QRLabel11;
+   TQRSysData *QRSysData4;
+   TQRSubDetail *QRSubDetail1;
+   TQRDBText *QRDBText14;
+   TQRDBText *QRDBText16;
+   TQRDBText *QRDBText23;
+   TQRChildBand *ChildBand1;
+   TQRLabel *QRLabel26;
+   TQRLabel *QRLabel37;
+   TQRLabel *QRLabel38;
+   TQRLabel *QRLabel39;
+   TQRBand *SummaryBand1;
+   TQRLabel *QRLabel19;
+   TQRSysData *QRSysData9;
+   TQRBand *QRBand4;
+   TQRLabel *QRLabel20;
+   TQRDBText *QRDBText9;
+   TQRBand *TitleBand2;
+   TQRLabel *QRLabel12;
+   TQRDBText *QRDBText15;
+   TQuery *RoomProtocolQuery;
+   TIntegerField *RoomProtocolQueryID;
+   TIntegerField *RoomProtocolQueryFk;
+   TStringField *RoomProtocolQueryName;
+   TQuickRep *ProtocolExamRes;
+   TQRBand *QRBand18;
+   TQRLabel *QRLabel36;
+   TQRBand *QRBand19;
+   TQRDBText *QRDBText28;
+   TQRDBText *QRDBText29;
+   TQRDBText *QRDBText30;
+   TQRShape *QRShape9;
+   TQRBand *QRBand20;
+   TQRLabel *QRLabel40;
+   TQRSysData *QRSysData13;
+   TQRLabel *QRLabel41;
+   TQRSysData *QRSysData14;
+   TQRBand *QRBand21;
+   TQRLabel *QRLabel42;
+   TQRLabel *QRLabel43;
+   TQRSysData *QRSysData15;
+   TQRBand *QRBand22;
+   TQRLabel *QRLabel50;
+   TQRLabel *QRLabel51;
+   TQRLabel *QRLabel52;
+   TQRLabel *QRLabel53;
+   TQRShape *QRShape10;
+   TQRLabel *QRLabel54;
+   TStringField *RoomProtocolQueryEGN;
+   TQRSysData *QRSysData10;
+   TQRLabel *QRLabel23;
+   TQRSysData *QRSysData11;
+   TQRLabel *QRLabel44;
+   TQRLabel *ExamNameLabel;
+   TQRBand *SummaryBand2;
+   TQRLabel *QRLabel22;
+   TQRLabel *QRLabel45;
+   TQRDBText *QRPrefered;
+   TBooleanField *RoomProtocolQueryPreferedSchool;
+   TQRLabel *QRLabel13;
+   TQRLabel *QRLabel16;
+   TQRLabel *QRLabel15;
+   TQRLabel *QRLabel21;
+   void __fastcall OfficialQueryCalcFields(TDataSet *DataSet);
+private:	// User declarations
+public:		// User declarations
+   __fastcall TExamResultsResForm(TComponent* Owner);
+   bool inclPrefer;
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TExamResultsResForm *ExamResultsResForm;
+//---------------------------------------------------------------------------
+#endif

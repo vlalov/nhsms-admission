@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="Reception.exe"/>
+    <OBJFILES value="Reception.obj WishesHistoryRes.obj AllReceptionProfilesRes.obj 
+      AllReceptionRes.obj CurrentReceptionRes.obj DataModule.obj 
+      ExamResultSearcher.obj ExamResultsRes.obj ExamStatisticsRes.obj 
+      ExamStatsGraph.obj GeneratePoints.obj History.obj Library.obj Login.obj 
+      Main.obj Options.obj PersonsHistoryRes.obj ReceptionRes.obj 
+      RoomChooser.obj RoomProtocolRes.obj RoomsUsage.obj RoomsUsageGraph.obj 
+      AllReception.obj LogGenerator.obj RegisterRes.obj RegisterSearcher.obj 
+      QuickRepPage.obj Classificate.obj HelpShow.obj OperatorTaxes.obj 
+      CheckEGN.obj ReceptionMap.obj BlankLoad.obj PrintBlanks.obj 
+      PreviewText.obj RoomUsageAuto.obj"/>
+    <RESFILES value="Reception.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) WishesHistoryRes.dfm AllReceptionProfilesRes.dfm 
+      AllReceptionRes.dfm CurrentReceptionRes.dfm DataModule.dfm 
+      ExamResultSearcher.dfm ExamResultsRes.dfm ExamStatisticsRes.dfm 
+      ExamStatsGraph.dfm GeneratePoints.dfm History.dfm Login.dfm Main.dfm 
+      Options.dfm PersonsHistoryRes.dfm ReceptionRes.dfm RoomChooser.dfm 
+      RoomProtocolRes.dfm RoomsUsage.dfm RoomsUsageGraph.dfm AllReception.dfm 
+      RegisterRes.dfm RegisterSearcher.dfm QuickRepPage.dfm HelpShow.dfm 
+      OperatorTaxes.dfm CheckEGN.dfm ReceptionMap.dfm PreviewText.dfm 
+      RoomUsageAuto.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="nmfast.lib lmd50se_B6.lib dss.lib tee.lib Vcwb6.lib bcbsmp.lib rsl60.lib 
+      vcldb.lib dbrtl.lib bdertl.lib vclx.lib qrpt.lib rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib qrpt.lib vclx.lib bdertl.lib dbrtl.lib vcldb.lib rsl60.lib 
+      bcbsmp.lib Vcwb6.lib tee.lib dss.lib lmd50se_B6.lib nmfast.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi lmd50se_B6.bpi dxForumLibC6.bpi rsl60.bpi 
+      clxrsl60.bpi Vcwb6.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="Reception.cpp"/>
+    <INCLUDEPATH value="..;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\AddOns\Storage\CBuilder6;$(BCB)\Lib\LMD50\Main;C:\CBuilder6\AddOns\VrLibrary\BCB;$(BCB)\AddOns\BCB;C:\CBuilder6\AddOns\VrTools\BCB"/>
+    <LIBPATH value="..;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\AddOns\Storage\CBuilder6;$(BCB)\LIB\lmd50\MAIN;$(BCB)\lib\obj;$(BCB)\lib;D:\CBuilder6\AddOns\BCB;C:\CBuilder6\AddOns\VrTools\BCB"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I.. -I$(BCB)\include -I$(BCB)\include\vcl 
+      -I$(BCB)\AddOns\Storage\CBuilder6 -I$(BCB)\Lib\LMD50\Main 
+      -IC:\CBuilder6\AddOns\VrLibrary\BCB -I$(BCB)\AddOns\BCB 
+      -IC:\CBuilder6\AddOns\VrTools\BCB -src_suffix cpp -boa"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Vx -Ve -X- -a8 -6 -b- -k- -vi -c -tW -tWM"/>
+    <PFLAGS value="-$Y- -$L- -$D- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="Reception.res" FORMNAME="" UNITNAME="Reception.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Reception.cpp" FORMNAME="" UNITNAME="Reception" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="WishesHistoryRes.cpp" FORMNAME="WishesHistoryResForm" UNITNAME="WishesHistoryRes" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AllReceptionProfilesRes.cpp" FORMNAME="AllReceptionProfilesResForm" UNITNAME="AllReceptionProfilesRes" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AllReceptionRes.cpp" FORMNAME="AllReceptionResForm" UNITNAME="AllReceptionRes" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CurrentReceptionRes.cpp" FORMNAME="CurrentReceptionResForm" UNITNAME="CurrentReceptionRes" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DataModule.cpp" FORMNAME="Data" UNITNAME="DataModule" CONTAINERID="CCompiler" DESIGNCLASS="TDataModule" LOCALCOMMAND=""/>
+      <FILE FILENAME="ExamResultSearcher.cpp" FORMNAME="ExamsResultSearcherForm" UNITNAME="ExamResultSearcher" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ExamResultsRes.cpp" FORMNAME="ExamResultsResForm" UNITNAME="ExamResultsRes" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ExamStatisticsRes.cpp" FORMNAME="ExamStatisticsResForm" UNITNAME="ExamStatisticsRes" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ExamStatsGraph.cpp" FORMNAME="ExamStatsGraphForm" UNITNAME="ExamStatsGraph" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="GeneratePoints.cpp" FORMNAME="GeneratePointsForm" UNITNAME="GeneratePoints" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="History.cpp" FORMNAME="HistoryForm" UNITNAME="History" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Library.cpp" FORMNAME="" UNITNAME="Library.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Login.cpp" FORMNAME="LoginForm" UNITNAME="Login" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Main.cpp" FORMNAME="MainForm" UNITNAME="Main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Options.cpp" FORMNAME="OptionsForm" UNITNAME="Options" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PersonsHistoryRes.cpp" FORMNAME="PersonsHistoryResForm" UNITNAME="PersonsHistoryRes" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Reception.cpp" FORMNAME="" UNITNAME="Reception.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ReceptionRes.cpp" FORMNAME="ReceptionResForm" UNITNAME="ReceptionRes" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RoomChooser.cpp" FORMNAME="RoomChooserForm" UNITNAME="RoomChooser" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RoomProtocolRes.cpp" FORMNAME="RoomProtocolResForm" UNITNAME="RoomProtocolRes" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RoomsUsage.cpp" FORMNAME="RoomsUsageForm" UNITNAME="RoomsUsage" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RoomsUsageGraph.cpp" FORMNAME="RoomsUsageGraphForm" UNITNAME="RoomsUsageGraph" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="AllReception.cpp" FORMNAME="AllReceptionForm" UNITNAME="AllReception" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Reception.todo" FORMNAME="" UNITNAME="Reception.todo" CONTAINERID="ToDo" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="LogGenerator.cpp" FORMNAME="" UNITNAME="LogGenerator" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RegisterRes.cpp" FORMNAME="RegisterResForm" UNITNAME="RegisterRes" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RegisterSearcher.cpp" FORMNAME="RegisterSearcherForm" UNITNAME="RegisterSearcher" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="QuickRepPage.cpp" FORMNAME="QuickRepEditorForm" UNITNAME="QuickRepPage" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Classificate.cpp" FORMNAME="" UNITNAME="Classificate" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="HelpShow.cpp" FORMNAME="HelpShowForm" UNITNAME="HelpShow" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="OperatorTaxes.cpp" FORMNAME="OperatorTaxesForm" UNITNAME="OperatorTaxes" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CheckEGN.cpp" FORMNAME="CheckEGNForm" UNITNAME="CheckEGN" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="ReceptionMap.cpp" FORMNAME="ReceptionMapForm" UNITNAME="ReceptionMap" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BlankLoad.cpp" FORMNAME="" UNITNAME="BlankLoad" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PrintBlanks.cpp" FORMNAME="" UNITNAME="PrintBlanks" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="PreviewText.cpp" FORMNAME="PreviewTextForm" UNITNAME="PreviewText" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="RoomUsageAuto.cpp" FORMNAME="RoomUsageAutoForm" UNITNAME="RoomUsageAuto" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=1
+MajorVer=1
+MinorVer=1
+Release=13
+Build=83
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1026
+CodePage=1251
+
+[Version Info Keys]
+CompanyName=VNLSystems
+FileDescription=Reception of NHSMS v1.1
+FileVersion=1.1.13.83
+InternalName=Reception
+LegalCopyright=Copyright ©2003-2004 by Vladimir Lalov
+LegalTrademarks=Microsoft® SQL Server® 7.0 is a Trademark of Microsoft Corp.
+OriginalFilename=Reception.exe
+ProductName=Reception
+ProductVersion=1.1
+Comments=Reception for NHSMS
+Telephone=Mezdra - 0910/78-32  Sofia - N/A
+E-Mail=v.lalov@gmail.com
+ICQ#=335315937
+
+[HistoryLists\hlIncludePath]
+Count=23
+Item0=..;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\AddOns\Storage\CBuilder6;$(BCB)\Lib\LMD50\Main;C:\CBuilder6\AddOns\VrLibrary\BCB;$(BCB)\AddOns\BCB;C:\CBuilder6\AddOns\VrTools\BCB
+Item1=..;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\AddOns\Storage\CBuilder6;$(BCB)\Lib\LMD50\Main;D:\CBuilder6\AddOns\VrLibrary\BCB;$(BCB)\AddOns\BCB;C:\CBuilder6\AddOns\VrTools\BCB
+Item2=..;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\AddOns\Storage\CBuilder6;$(BCB)\Lib\LMD50\Main;D:\CBuilder6\AddOns\VrLibrary\BCB;$(BCB)\AddOns\BCB
+Item3=..;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\AddOns\Storage\CBuilder6;$(BCB)\Lib\LMD50\Main;D:\CBuilder6\AddOns\VrLibrary\BCB;$(BCB)\AddOns\VrTools\BCB
+Item4=..;d:\Program Files\Borland\CBuilder6\Projects;e:\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\AddOns\Storage\CBuilder6;$(BCB)\Lib\LMD50\Main;$(BCB)\AddOns\BCB;$(BCB)\AddOns\Storage\Storage\CBuilder6;$(BCB)\AddOns\VrTools\BCB
+Item5=..\;..;d:\Program Files\Borland\CBuilder6\Projects;e:\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\AddOns\Storage\CBuilder6;$(BCB)\Lib\LMD50\Main;$(BCB)\AddOns\BCB;$(BCB)\AddOns\Storage\Storage\CBuilder6;$(BCB)\AddOns\VrTools\BCB
+Item6=..\;d:\Program Files\Borland\CBuilder6\Projects;e:\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\AddOns\Storage\CBuilder6;$(BCB)\Lib\LMD50\Main;$(BCB)\AddOns\BCB;$(BCB)\AddOns\Storage\Storage\CBuilder6;$(BCB)\AddOns\VrTools\BCB
+Item7=d:\Program Files\Borland\CBuilder6\Projects;e:\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;$(BCB)\AddOns\Storage\CBuilder6;$(BCB)\Lib\LMD50\Main;$(BCB)\AddOns\BCB;$(BCB)\AddOns\Storage\Storage\CBuilder6;$(BCB)\AddOns\VrTools\BCB
+Item8=D:\Program Files\Borland\CBuilder6\Projects;D:\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\CBuilder6\AddOns\Storage\CBuilder6;D:\CBuilder6\Lib\LMD50\Main;D:\CBuilder6\AddOns\BCB;$(BCB)\AddOns\Storage\Storage\CBuilder6;$(BCB)\AddOns\VrTools\BCB
+Item9=D:\Program Files\Borland\CBuilder6\Projects;D:\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\CBuilder6\AddOns\Storage\CBuilder6;D:\CBuilder6\Lib\LMD50\Main;D:\CBuilder6\AddOns\BCB;$(BCB)\AddOns\Storage\Storage\CBuilder6;$(BCB)\AddOns\VrTools\BCB;$(BCB)\Lib\LMD50\Main
+Item10=D:\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\CBuilder6\AddOns\Storage\CBuilder6;D:\CBuilder6\Lib\LMD50\Main;D:\CBuilder6\AddOns\BCB;$(BCB)\AddOns\Storage\Storage\CBuilder6;$(BCB)\AddOns\VrTools\BCB;$(BCB)\Lib\LMD50\Main
+Item11=D:\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\CBuilder6\AddOns\Storage\CBuilder6;D:\CBuilder6\Lib\LMD50\Main;D:\CBuilder6\AddOns\BCB;$(BCB)\AddOns\Storage\Storage\CBuilder6;$(BCB)\AddOns\VrTools\BCB
+Item12=D:\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\CBuilder6\AddOns\Storage\CBuilder6;D:\CBuilder6\Lib\LMD50\Main;D:\CBuilder6\AddOns\BCB;$(BCB)\Projects;$(BCB)\AddOns\Storage\Storage\CBuilder6;$(BCB)\Lib\LMD50\Main;$(BCB)\AddOns\VrTools\BCB
+Item13=D:\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl;D:\CBuilder6\AddOns\Storage\CBuilder6;D:\CBuilder6\Lib\LMD50\Main;D:\CBuilder6\AddOns\BCB
+Item14=$(BCB)\include;$(BCB)\include\vcl;D:\CBuilder6\AddOns\Storage\CBuilder6;D:\CBuilder6\Lib\LMD50\Main;D:\CBuilder6\AddOns\BCB
+Item15=$(BCB)\include;$(BCB)\include\vcl;D:\Program Files\Borland\CBuilder6\AddOns\Storage\Storage\CBuilder6;D:\Program Files\Borland\CBuilder6\Lib\LMD50\Main;D:\Program Files\Borland\CBuilder6\AddOns\VrTools\BCB
+Item16=D:\CBuilder6\Projects;F:\Work\CBuilder6\Reception;$(BCB)\include;$(BCB)\include\vcl;D:\CBuilder6\AddOns\Storage\CBuilder6;D:\CBuilder6\Lib\LMD50\Main;D:\CBuilder6\AddOns\BCB
+Item17=F:\Work\CBuilder6\Reception;$(BCB)\include;$(BCB)\include\vcl;D:\CBuilder6\AddOns\Storage\CBuilder6;D:\CBuilder6\Lib\LMD50\Main;D:\CBuilder6\AddOns\BCB
+Item18=F:\Work\CBuilder6\Reception;$(BCB)\include;$(BCB)\include\vcl;D:\CBuilder6\AddOns\Storage\CBuilder6;D:\CBuilder6\Lib\LMD50\Main
+Item19=F:\Work\CBuilder6\Reception;$(BCB)\include;$(BCB)\include\vcl;D:\CBuilder6\AddOns\Storage\CBuilder6;D:\CBuilder6\AddOns\LMD50SE\source
+Item20=F:\Work\CBuilder6\Reception;$(BCB)\include;$(BCB)\include\vcl;D:\CBuilder6\AddOns\Storage\CBuilder6
+Item21=F:\Work\CBuilder6\Reception;$(BCB)\include;$(BCB)\include\vcl;D:\CBuilder6\AddOns\Storage\Source
+Item22=D:\CBuilder6\Projects;F:\Work\CBuilder6\Reception;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=15
+Item0=..;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\AddOns\Storage\CBuilder6;$(BCB)\LIB\lmd50\MAIN;$(BCB)\lib\obj;$(BCB)\lib;D:\CBuilder6\AddOns\BCB;C:\CBuilder6\AddOns\VrTools\BCB
+Item1=..;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\AddOns\Storage\CBuilder6;$(BCB)\LIB\lmd50\MAIN;$(BCB)\lib\obj;$(BCB)\lib;C:\CBuilder6\AddOns\Storage\CBuilder6;D:\CBuilder6\AddOns\BCB;C:\CBuilder6\AddOns\VrTools\BCB
+Item2=..;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\AddOns\Storage\CBuilder6;$(BCB)\LIB\lmd50\MAIN;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\AddOns\Storage\Storage\CBuilder6;D:\CBuilder6\AddOns\BCB
+Item3=..;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\AddOns\Storage\CBuilder6;$(BCB)\LIB\lmd50\MAIN;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\AddOns\Storage\Storage\CBuilder6
+Item4=..\;..;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\AddOns\Storage\CBuilder6;$(BCB)\LIB\lmd50\MAIN;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\AddOns\Storage\Storage\CBuilder6
+Item5=..\;$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\AddOns\Storage\CBuilder6;$(BCB)\LIB\lmd50\MAIN;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\AddOns\Storage\Storage\CBuilder6
+Item6=$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\AddOns\Storage\CBuilder6;$(BCB)\LIB\lmd50\MAIN;$(BCB)\lib\obj;$(BCB)\lib;$(BCB)\AddOns\Storage\Storage\CBuilder6
+Item7=$(BCB)\Projects;$(BCB)\Projects\Lib;$(BCB)\AddOns\Storage\CBuilder6;$(BCB)\AddOns\ExpressForumLibrary\Lib;$(BCB)\LIB\lmd50\MAIN;$(BCB)\lib\obj;$(BCB)\lib
+Item8=D:\CBuilder6\Projects;$(BCB)\Projects\Lib;D:\Program Files\Borland\CBuilder6\AddOns\Storage\Storage\CBuilder6;D:\CBuilder6\AddOns\ExpressForumLibrary\Lib;$(BCB)\LIB\lmd50\MAIN;$(BCB)\lib\obj;$(BCB)\lib
+Item9=D:\CBuilder6\Projects;$(BCB)\Projects\Lib;D:\CBuilder6\AddOns\Storage\CBuilder6;D:\CBuilder6\AddOns\ExpressForumLibrary\Lib;F:\Work\CBuilder6\Reception;$(BCB)\LIB\lmd50\MAIN;$(BCB)\lib\obj;$(BCB)\lib
+Item10=$(BCB)\Projects\Lib;D:\CBuilder6\AddOns\Storage\CBuilder6;D:\CBuilder6\AddOns\ExpressForumLibrary\Lib;F:\Work\CBuilder6\Reception;$(BCB)\LIB\lmd50\MAIN;$(BCB)\lib\obj;$(BCB)\lib
+Item11=D:\CBuilder6\AddOns\Storage\CBuilder6;D:\CBuilder6\AddOns\ExpressForumLibrary\Lib;F:\Work\CBuilder6\Reception;$(BCB)\LIB\lmd50\MAIN;$(BCB)\lib\obj;$(BCB)\lib
+Item12=D:\CBuilder6\AddOns\Storage\CBuilder6;D:\CBuilder6\AddOns\ExpressForumLibrary\Lib;F:\Work\CBuilder6\Reception;$(BCB)\Projects\Lib;$(BCB)\LIB\lmd50\MAIN;D:\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item13=D:\CBuilder6\AddOns\Storage\CBuilder6;D:\CBuilder6\AddOns\ExpressForumLibrary\Lib;D:\CBuilder6\Projects;F:\Work\CBuilder6\Reception;$(BCB)\Projects\Lib;$(BCB)\LIB\lmd50\MAIN;$(BCB)\lib\obj;$(BCB)\lib
+Item14=D:\CBuilder6\AddOns\Storage\CBuilder6;D:\CBuilder6\AddOns\ExpressForumLibrary\Lib;D:\CBuilder6\Projects;F:\Work\CBuilder6\Reception;$(BCB)\Projects\Lib;..\AddOns\Storage\CBuilder6;..\AddOns\ExpressForumLibrary\Lib;$(BCB)\LIB\lmd50\MAIN;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=-debug
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>

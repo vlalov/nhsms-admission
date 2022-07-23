@@ -1,0 +1,13 @@
+Variable	Meaning
+---------------------------------------------
+#1		Current Date(in ShortFormat)
+#2		Operators name (if it is selected custom operator also the date)
+#3		Person's input number (overwrite mode)
+#4		Person's name (overwrite mode)
+#5		Person's EGN (overwrite mode)
+#6		Total tax, payed by this person
+#/		Start of repeating lines
+\#		End of repeating lines
+
+#7		Number of persons
+#8		Total tax from all persons

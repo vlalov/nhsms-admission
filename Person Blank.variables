@@ -1,0 +1,32 @@
+Variable	Meaning
+---------------------------------------------
+/R\		carrige return
+/N\		new line
+
+#1		Date
+#2		Number
+#3		Name
+#4		EGN
+#5		Sex
+#6		Address
+#7		Telephone
+-- Wishes
+#/		Start line repeating for wishes (won't be visible)
+\#		End line repeating for wishes (won't be visible)
+#8		Wish's Priority (overwrite mode)
+#9		Wish's Profile  (overwrite mode)
+#0		Score from certificate (#.00 format) (overwrite mode)
+#A		Score from olymp (#.00) format (overwrite mode)
+#B		Go to exam state ('Да' - Yes or 'Не' - No, if no olymp - nothing) (overwrite mode)
+#N		Number of taxes (w/o first exam) (overwrite mode)
+#T		Single tax value (standard format or decimal - no currency) (overwrite mode)
+#X		All tax (decimal, no currency) (overwrite mode)
+#Z		place of first exam.
+#operator#	The name of the operator, entered this person
+
+WARNING!!!
+ 1. Carrige returns from database texts are included too.
+ 2. All variables found in this text will be also replaced by this rules
+ 3. DO NOT ENTER recursive variables! This may crash the program!
+ 4. There must be only one pairs of repeating line for wishes!
+if you enter more than one pair or an incorrect one they will be ignored!

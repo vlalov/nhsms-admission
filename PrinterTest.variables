@@ -1,0 +1,3 @@
+Use file 'PrinterTest.blk' to view your printer's code table.
+To use it open a Command Prompt and type 'copy PrinterTest.blk LPT1'.
+Then your printer must start printing...
